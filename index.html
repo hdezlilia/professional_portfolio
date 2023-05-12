@@ -9,54 +9,64 @@
   <body>
     <header>
       <h1>Welcome To My Portfolio</h1>
+      <img src="pic_trulli.jpg" alt="Italian Trulli" >
     </header>
 
     <nav>
-      <a href="#">Contact Info</a>
-      <a href="#">Work</a>
-      <a href="#">About Me</a>
+      <a href="#contact-info">Contact Info</a>
+      <a href="#work">Work</a>
+      <a href="#about-me">About Me</a>
     </nav>
 
     <main>
       <section>
-        <span style="display:flex;">
+        <span style="display:flex;" section id="about-me">
             <h2>About Me</h2>
-            <span class="contentContainer">
-                <p>Welcome to my portfolio, feel free to take a look around. I'm currently working on projects to add. 
-                    Feel free to add feedback and areas in which I can improve. 
+
+            <span class="contentContainer"style='display:center ;'>
+                <p>
+                  Hello and welcome to my portfolio! My name is <strong>Lilia Hernandez</strong> 
+                  and I am a software developer.
+                  <p>My portfolio showcases some of my best work and achievements in my coding experience. 
+                  I hope that by browsing through my portfolio, you will get a 
+                  better understanding of who I am and what I can bring to the table.</p>
+
+                  Thank you for taking the time to visit my portfolio, and please 
+                  don't hesitate to contact me if you have any questions or would 
+                  like to collaborate.
                 </p>
-                <div class="sample-img">Image</div>
             </span>
         </span>
 
-        <span style="display:flex;">
+        <span style="display:flex;" section id="work">
             <h2>Work</h2>
             <span class="contentContainer">
-                <p>Welcome to my portfolio, feel free to take a look around. I'm currently working on projects to add. 
-                    Feel free to add feedback and areas in which I can improve. 
-                </p>
-                <div class="sample-img">Image</div>
+                <!-- <img src="./pictures/image_2.jpeg" alt= img class="fadein" style="width: 79.5%;"> -->
+                <section class="card">
+                  <div class = 'fadein'>
+                    <img src="./pictures/image_1.jpeg">
+                    <img src="./pictures/image_3.jpeg">
+                    <img src="./pictures/image_4.jpeg">
+                    <img src="./pictures/image_5.jpeg">
+                  </div>
+                </section>
+                
             </span>
         </span>
 
-        <span style="display:flex;">
-            <h2>Contact Me </h2>
-            <span class="contentFoot">
-                <ul>
-                    <li><strong>Email: </strong> <a href="#">hdez.lilia@gmail.com</a></li>
-                    <li><strong>Github: </strong> <a href="#">@hdez.lilia</a></li>
-                    <li><strong>Contact: </strong> <a href="#">555.555.5555</a></li>
+        <span style="display:flex;" section id="contact-info">
+            <h2>Contact Info</h2>
+            <span class="contentContainer">
+              <section class="card">
+                <ul class="no-bullets">
+                    <li><strong>Email: </strong> <a style="text-decoration: none" href="#">hdez.lilia@gmail.com</a></li>
+                    <li><strong>Github: </strong> <a style="text-decoration: none" href="#hdez.lilia56@gmail.com">@hdez.lilia</a></li>
+                    <li><strong>Contact: </strong> <a style="text-decoration: none" href="#">555.555.5555</a></li>
                 </ul>
+              </section>
             </span>
         </span>
       </section>
     </main>
-
-    <footer>
-      <h3>
-        Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
-        window!
-      </h3>
-    </footer>
   </body>
 </html>

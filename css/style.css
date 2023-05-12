@@ -27,12 +27,25 @@ nav a {
     text-align: right;
 }
 
+span {
+    text-decoration: none;
+    text-decoration-color: black;
+    align-items: center;
+}
+
 nav li {
     color: white;
     text-decoration: none;
     text-align: center;
 }
-  
+
+
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -49,50 +62,61 @@ h2 {
     margin: 20px;
     /* background-color: lightblue;
     border: 3px solid lightblue; */
-    border-right: 3px solid black;
+    /* border-right: 3px solid black; */
 }
+
 
 .contentContainer {
     padding: 40px;
+
 }
 
-.contentFoot {
+/* .contentFoot {
     margin: 3px;
-}
+    padding:20px;
+    box-sizing: border-box;
+} */
 
 section {
-    flex: 3;
+    /* flex: 3; */
     background-color: #e0e5ef;
     padding: 20px;
 }
   
-.sample-img {
-    background-color: #fff;
-    width: 100%;
+
+.card header {
     padding: 20px;
-    height: 200px;
-    border: 1px solid black;
+}
+
+/* 4 smaller images */
+.card img {
+    width: 40%;
+    margin: 1px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+
+}
+/* fadein images  */
+.fadein img{
+    opacity:0.5;
+    transition: 1s ease;
+}
+
+.fadein img:hover{
+    opacity:1;
+    transition: 1s ease;
+    transform:scale(1.05);
 }
 
 
-  
-footer {
-    padding: 20px;
-    text-align: center;
-    background: #cb997e;
-    color: #fff;
-}
-  
 @media screen and (max-width: 768px) {
     /* Use flex-direction to stack the navbar, sidebar, and body */
     main,
     nav {
       flex-direction: column;
     }
-    /* Make the sidebar stack below the body */
-    aside {
-      order: 2;
-    }
+
     /* Change the header background */
     header {
       background: #772014;
