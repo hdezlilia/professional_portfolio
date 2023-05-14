@@ -10,13 +10,13 @@ body {
 header {
     padding: 40px;
     text-align: center;
-    background: #2a2a3a;
+    background: #f6bd60;
     color: #fff;
 }
   
 nav {
     display: flex;
-    background-color: #6b705c;
+    background-color: #84a59d;
     flex-direction: row-reverse; 
 }
   
@@ -79,7 +79,7 @@ h2 {
 
 section {
     /* flex: 3; */
-    background-color: #e0e5ef;
+    background-color: #eed7d4;
     padding: 20px;
 }
   
